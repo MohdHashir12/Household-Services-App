@@ -26,26 +26,8 @@ The **Household Services App** is a full-stack web application designed to seaml
 | Scheduling  | Celery + Redis                         |
 | Caching     | Redis                                  |
 | Security    | JWT for token-based authentication     |
-| Docs/Charts | Flasgger (Swagger UI), ChartJS         |
+| Charts      | ChartJS                                |
 
----
-Installation :
-Clone the repository:
-git clone https://github.com/MohdHashir12/Household-Services-App.git
-Create a virtual environment:
-python -m venv env
-source env/bin/activate
-Install the required packages:
-pip install -r requirements.txt
-Run the application
-flask run
-Install Redis:
-https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/
-Run Redis:
-sudo service redis-server start
-Run Celery worker in another window:
-celery -A app.celery worker --loglevel=info
-Run Celery beat in another window:
-celery -A app.celery beat --loglevel=info
+
 
 
